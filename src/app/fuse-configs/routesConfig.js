@@ -3,8 +3,14 @@ import FuseUtils from '@fuse/utils';
 import ExampleConfig from 'app/main/example/ExampleConfig';
 import FuseLoading from '@fuse/core/FuseLoading';
 import Error404Page from 'app/main/404/Error404Page';
+import TimeLineConfig from 'app/main/TimeLine/TimeLineConfig';
+import CustomCardConfig from 'app/main/Card/CustomCardConfig';
 
-const routeConfigs = [ExampleConfig];
+const routeConfigs = [
+  ExampleConfig,
+  TimeLineConfig,
+  CustomCardConfig,
+];
 
 const routes = [
   // if you want to make whole app auth protected by default change defaultAuth for example:
@@ -15,6 +21,16 @@ const routes = [
     exact: true,
     path: '/',
     component: () => <Redirect to="/example" />,
+  },
+  {
+    exact: true,
+    path: '/timeline',
+    component: () => <Redirect to="/timeline" />,
+  },
+  {
+    exact: true,
+    path: '/custom-card',
+    component: () => <Redirect to="/custom-card" />,
   },
   {
     path: '/loading',

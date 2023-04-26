@@ -23,6 +23,22 @@ const navigationConfig = [
         icon: 'whatshot',
         url: '/example',
       },
+      {
+        id: 'timeline-component',
+        title: 'TimeLine',
+        translate: 'TIMELINE',
+        type: 'item',
+        icon: 'access_time',
+        url: '/timeline',
+      },
+      {
+        id: 'custom-card-component',
+        title: 'Custom-Card',
+        translate: 'CARD',
+        type: 'item',
+        icon: 'aspect_ratio',
+        url: '/custom-card',
+      },
     ],
   },
 ];
